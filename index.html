@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les Couleurs de la Vie - Accompagnement Deuil Périnatale</title>
+    <link rel="shortcut icon" href="img/logo.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -13,7 +14,8 @@
         <div class="logo-container">
             <img src="img/logo.png" alt="Logo Les Couleurs de la Vie Nadine Rochereau" class="logo-image">
             <div class="logo-text">
-                <p>Les Couleurs de la Vie - Nadine Rochereau</p>
+                <p>Les Couleurs de la Vie</p>
+                <p>Nadine Rochereau</p>
             </div>
         </div>
 
@@ -21,19 +23,21 @@
             <ul>
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#apropos">À propos</a></li>
-                <li><a href="#accompagnement">Accompagnement</a></li>
-                <li><a href="#offres">Offres</a></li>
+                <li><a href="#offres">Accompagnement</a></li>
+                <li><a href="#details-individuel">Parcours</a></li>
                 <li><a href="#faq">FAQ</a></li>
             </ul>
+        </nav>
+        <div class="header_button">
             <a href="#" class="btn-primary">Réserver un appel</a>
             <a href="https://linkedin.com/in/votrepofil" class="btn-linkedin" aria-label="Lien vers LinkedIn">
                 <i class="fab fa-linkedin"></i>
             </a>
-        </nav>
+        </div>
+        
+        
     </header>
-
     <main>
-
         <section id="accueil" class="hero-section">
             <div class="hero-content">
                 <h1 class="headline-choc">
@@ -44,22 +48,27 @@
                     J'accompagne les parents endeuillés après la perte d'un bébé pour <span class="bold">offrir un soutien juste et humain</span> dans ces instants où les mots manquent et où chaque attention compte.
                 </p>
                 <div class="photo-container">
-                    <img src="img/nadine_accueil.png" alt="Nadine Rochereau - Accompagnatrice" class="profile-photo">
+                    <img src="img/nadine_accueil.jpg" alt="Nadine Rochereau - Accompagnatrice" class="profile-photo">
                 </div>
                 <button class="btn-secondary">Réserver un appel</button>
             </div>
-            <div class="decoration ribbon-deco">🎗️</div>
-            <div class="decoration butterfly-deco">🦋</div>
+            <div class="decoration ribbon-deco">
+                <img src="img/ruban.png" alt="Ruban décoratif" class="deco-image"> 
+            </div>
+            <div class="decoration butterfly-deco">
+                <img src="img/fleur.png" alt="Papillon décoratif" class="deco-image">
+            </div> 
         </section>
-        
         <section id="explication-deuil" class="info-section">
-            <h2>Deuil périnatal — Un espace pour déposer votre douleur, en douceur</h2>
+            <div class="deuil_title">
+                <h2>Deuil périnatal</h2>
+                <h3>Un espace pour déposer votre douleur, en douceur</h3>
+            </div>
             <div class="info-grid">
                 <div class="info-grid-text">
                     <p>
-                    Perdre un bébé, que ce soit pendant la grossesse ou juste après la naissance, est une expérience profondément bouleversante. Même s’il a à peine vécu, il a occupé une place immense dans votre cœur. Votre chagrin est réel, légitime, et mérite d’être pleinement reconnu.
-                    Le deuil périnatal est souvent silencieux : dans l’inconscient collectif, « un bébé, ça ne meurt pas ».
-                    
+                        Perdre un bébé, que ce soit pendant la grossesse ou juste après la naissance, est une expérience profondément bouleversante. Même s’il a à peine vécu, il a occupé une place immense dans votre cœur. Votre chagrin est réel, légitime, et mérite d’être pleinement reconnu.
+                        Le deuil périnatal est souvent silencieux : dans l’inconscient collectif, « un bébé, ça ne meurt pas ».
                     </p>
                     <p> 
                         Alors les parents se peuvent se retrouver seuls avec leur tristesse, leur culpabilité, leurs questions sans réponse. Ici, vous êtes accueilli·e tel·le que vous êtes, avec vos émotions, vos doutes, votre fatigue, vos besoins.
@@ -71,11 +80,17 @@
                 </div>
                 <img src="img/image_deuil.png" alt="Accompagnement deuil périnatal" class="visual-placeholder" id="deuil_img">
             </div>
-            <p class="transition-phrase">
+            <div class="transition-div">
+                <p class="transition-phrase">
                 Parce que le deuil périnatal mérite plus d’attention, plus de parole, et plus de soutien.
-                Et que personne ne devrait marcher seul dans l’ombre d’un enfant parti trop tôt.
-            </p>
+                </p>
+                <p class="transition-phrase">
+                    Et que personne ne devrait marcher seul dans l’ombre d’un enfant parti trop tôt.
+                </p>
+            </div>
+            
         </section>
+        <div class="smooth-transition-div"></div>
 
         <section id="apropos" class="about-section">
             <h2>Mon Histoire et Mon Engagement</h2>
@@ -90,79 +105,49 @@
                     </p>
                     <p>
                         En 2003, j’ai vécu la perte de notre fille aînée, décédée la veille de l’accouchement. Ce deuil a profondément transformé ma vie. J’ai dû apprendre à vivre avec une absence insoutenable, une peine silencieuse, une culpabilité invisible. Et surtout, à me reconstruire, pas à pas, à redonner un sens à mon existence. Le chemin a été long, douloureux et semé d’embuche, mais aujourd’hui je ne suis plus dans la survie, je vis pleinement à nouveau.
-
                     </p>
                 </div>
-                <img src="img/nadine_apropos.png" alt="nadine_apropos" class="visual-placeholder" id="apropos_img">
+                <img src="img/nadine_apropos.jpg" alt="nadine_apropos" class="visual-placeholder" id="apropos_img">
             </div>
         </section>
 
-        <section id="offres" class="offers-section">
-            <h2>✨ Choisir Votre Chemin d'Accompagnement</h2>
-            <p class="tagline">
-                Que vous choisissiez un soutien intime et personnalisé ou la force d'un groupe, l'objectif reste le même : retrouver l'apaisement.
-            </p>
-            <div class="offers-grid">
+        <section id="offres" class="offers-section single-offer-focus">
+            <h2>Votre Accompagnement, Votre Chemin</h2>
+            <div class="offers-intro">
+                <p>
+                    Cet accompagnement propose un <span class="bold">espace sécurisé</span>, sans jugement, pour déposer ce que vous traversez, retrouver des <span class="bold">repères</span> et reconstruire peu à peu une vie où votre bébé garde une vraie place dans votre <span class="bold">histoire</span>.
+                </p>
+            </div>
+            <div class="offer-container-grid">
                 
-                <article class="offer-card personalized-offer">
-                    <header>
-                        <i class="fas fa-heartbeat icon-large"></i>
-                        <h3>Accompagnement Individuel (6 Mois)</h3>
-                        <p class="subtitle">Votre chemin sur-mesure pour remettre des couleurs dans votre vie.</p>
-                    </header>
-                    
-                    <div class="card-body">
-                        <h4>Ce que vous allez retrouver :</h4>
-                        <ul class="features-list condensed-list">
-                            <li><i class="fas fa-check-circle"></i> **10 séances individuelles** de 60 minutes.</li>
-                            <li><i class="fas fa-check-circle"></i> Apaisement de la douleur sans la nier.</li>
-                            <li><i class="fas fa-check-circle"></i> Reconstruction du quotidien et des repères.</li>
-                            <li><i class="fas fa-check-circle"></i> Place douce et juste pour votre bébé dans votre histoire.</li>
+                <div class="quote-block">
+                    <blockquote class="hugo-quote">
+                        "Tu n'étais plus là où tu étais, mais tu es partout là où je suis."
+                    </blockquote>
+                    <cite>— Victor Hugo</cite>
+                    <p class="quote-description">
+                        Cet accompagnement honore la place de votre enfant et vous permet de retrouver la lumière dans votre quotidien.
+                    </p>
+                </div>
+
+                <div class="offer-details-block">
+                    <div class="key-benefits-list">
+                        <h4>Ce que le programme vous apporte :</h4>
+                        <ul class="features-list">
+                            <li><i class="fas fa-check-circle"></i> <span class="bold">10 séances individuelles</span> de 60 minutes, à votre rythme.</li>
+                            <li><i class="fas fa-check-circle"></i> Apaisement progressif de l'intensité de la douleur émotionnelle.</li>
+                            <li><i class="fas fa-check-circle"></i> Outils concrets pour la reconstruction du quotidien et des repères.</li>
+                            <li><i class="fas fa-check-circle"></i> Création d'une place douce et juste pour votre bébé dans votre histoire.</li>
                         </ul>
-                        
-                        <a href="#details-individuel" class="btn-tertiary">Voir le parcours et le cadre</a>
-                    </div>
+                        <a href="#" class="btn-primary cta-main-btn">Réserver mon appel découverte gratuit</a>
+                </div>
 
-                    <footer class="pricing">
-                        <p><strong>Tarif :</strong> 155,40 € / mois (sur 6 mois)</p>
-                        <p class="small-info">**Bonus :** Appel découverte offert et lien WhatsApp entre les séances.</p>
-                        <a href="#" class="btn-primary cta-card-btn">Réserver un appel découverte</a>
-                    </footer>
-                </article>
-
-                <article class="offer-card group-offer">
-                    <header>
-                        <i class="fas fa-users icon-large"></i>
-                        <h3>Programme Mixte (Groupe & Individuel)</h3>
-                        <p class="subtitle">Rompre l'isolement grâce à la force du collectif (6 parents max).</p>
-                    </header>
-
-                    <div class="card-body">
-                        <h4>Ce que vous allez retrouver :</h4>
-                        <ul class="features-list condensed-list">
-                            <li><i class="fas fa-users-cog"></i> **5 séances de groupe de parole** codifiées (2h chacune).</li>
-                            <li><i class="fas fa-user-check"></i> **6 séances individuelles** par parent (1h).</li>
-                            <li><i class="fas fa-comments"></i> Un **Groupe WhatsApp** modéré pour le soutien continu.</li>
-                            <li><i class="fas fa-hands-helping"></i> Un espace sécurisé de partage entre pairs.</li>
-                        </ul>
-                        
-                        <a href="#" class="btn-tertiary">Demande de devis et partenariat</a>
-                    </div>
-
-                    <footer class="pricing">
-                        <p><strong>Format dédié aux Mutuelles et Organismes Partenaires.</strong></p>
-                        <p class="small-info">Objectif : Renforcement de la prévention en santé mentale de vos adhérents.</p>
-                        <a href="#" class="btn-primary cta-card-btn">Contacter pour un partenariat</a>
-                    </footer>
-                </article>
             </div>
         </section>
 
 
         <section id="details-individuel" class="detail-section">
-            <div class="detail-container">
-                <h2>Parcours Individuel : Le Chemin vers la Lumière</h2>
-                
+            <div class="detail-container">                
                 <div class="detail-block">
                     <h3><i class="fas fa-map-marked-alt"></i> Parcours Type (Indicatif - 10 Séances sur 6 mois)</h3>
                     <div class="timeline-grid">
@@ -184,23 +169,25 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="detail-block ethics-block">
-                    <h3><i class="fas fa-balance-scale"></i> Cadre Éthique et Limites</h3>
-                    <p class="important-note">
-                        **Cet accompagnement est un coaching et ne remplace pas un suivi médical ou psychologique.** Il s’inscrit dans une logique de soutien et de reconstruction du quotidien. Je ne traite pas les troubles psychiatriques (dépression sévère, PTSD). Si une souffrance intense apparait, je vous oriente vers un professionnel de santé.
-                    </p>
+                <div class="ethique-start-block">
+                    <div class="detail-block ethics-block">
+                        <h3><i class="fas fa-balance-scale"></i> Cadre Éthique et Limites</h3>
+                        <p class="important-note">
+                            <span class="bold">Cet accompagnement est un coaching et ne remplace pas un suivi médical ou psychologique.</span> Il s’inscrit dans une logique de soutien et de reconstruction du quotidien. Je ne traite pas les troubles psychiatriques (dépression sévère, PTSD). Si une souffrance intense apparait, je vous oriente vers un professionnel de santé.
+                        </p>
+                    </div>
+                    
+                    <div class="detail-block cta-final">
+                        <h3>Prêt(e) à faire le premier pas ?</h3>
+                        <ol class="start-steps">
+                            <li><i class="fas fa-calendar-check"></i> Réservez votre appel découverte gratuit.</li>
+                            <li><i class="fas fa-handshake"></i> Nous fixons le rythme et la date de démarrage.</li>
+                            <li><i class="fas fa-file-signature"></i> Signature de l'accord et premier paiement mensuel.</li>
+                        </ol>
+                        <button class="btn-primary">Réserver mon appel découverte (Gratuit)</button>
+                    </div>
                 </div>
                 
-                <div class="detail-block cta-final">
-                    <h3>Prêt(e) à faire le premier pas ?</h3>
-                    <ol class="start-steps">
-                        <li><i class="fas fa-calendar-check"></i> Réservez votre **appel découverte gratuit**.</li>
-                        <li><i class="fas fa-handshake"></i> Nous fixons le rythme et la date de démarrage.</li>
-                        <li><i class="fas fa-file-signature"></i> Signature de l'accord et premier paiement mensuel.</li>
-                    </ol>
-                    <button class="btn-primary">Réserver mon appel découverte (Gratuit)</button>
-                </div>
 
             </div>
         </section>

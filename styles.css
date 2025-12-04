@@ -36,6 +36,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 100%;
 }
 
 body {
@@ -157,23 +158,44 @@ p {
     padding: var(--space-xs) var(--space-md);
     background-color: var(--color-background-main);
     border-bottom: 1px solid #eee;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+    transition: transform 0.3s ease-in-out; 
 }
 
+.main-header.scroll-up {
+    transform: translateY(0); /* Le header est visible */
+}
+
+.main-header.scroll-down {
+    /* Cache le header en le déplaçant vers le haut de sa propre hauteur */
+    transform: translateY(-100%); 
+}
+
+body {
+    padding-top: 90px; 
+}
 .logo-container {
     display: flex;
     align-items: center;
 }
 
 .logo-container .logo-image {
-    height: 80px; 
+    height: 80px;
 }
-
 .logo-text p {
     font-size: 1rem;
     line-height: 1.2;
     font-weight: 600;
-    color: var(--color-primary);
+    padding:5px 0px;
     margin: 0;
+    color: var(--color-primary);
 }
 
 .main-nav ul {
@@ -199,6 +221,9 @@ p {
     align-items: center;
     gap: var(--space-sm);
 }
+.btn-primary{
+    margin-right:var(--space-xs);
+}
 
 /* ======================= 5. SECTION HÉRO (ACCUEIL) ======================= */
 .hero-section {
@@ -214,7 +239,7 @@ p {
 
 .hero-content {
     max-width: 800px;
-    padding-top: var(--space-lg);
+    padding-top: 30px;
     z-index: 10;
 }
 
@@ -222,7 +247,7 @@ p {
     font-size: 2.5rem;
     line-height: 1.3;
     margin-bottom: var(--space-md);
-    padding: 0 var(--space-md);
+    padding: 0 45px;
 }
 
 .tagline {
@@ -253,27 +278,29 @@ p {
 }
 
 .ribbon-deco {
-    top: 20%;
+    top: 40%;
     right: 5%;
-    font-size: 5rem;
-    opacity: 0.6;
-    color: var(--color-primary);
+    max-width: 100px;
+    max-height: 100px;
 }
 
 .butterfly-deco {
-    bottom: 10%;
-    left: 10%;
-    font-size: 3rem;
-    opacity: 0.8;
+    bottom: 1%;
+    left: 1%;
+
 }
 
-/* ======================= 6. EXPLICATION DEUIL & À PROPOS ======================= */
+
+/* ======================= 6. EXPLICATION DEUIL======================= */
 .info-section{
     background-color: var(--color-background-main);
     border-radius: var(--border-radius-card);
     margin: var(--space-lg) auto;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     max-width: 1200px;
+}
+.deuil_title h2{
+    margin-bottom: var(--space-xs);
 }
 
 .info-grid {
@@ -283,21 +310,26 @@ p {
     margin: 0 auto var(--space-md);
     padding: 0 var(--space-md);
 }
-.info-grid-text{
-    text-align: left;
+.info-grid-text p{
+    text-align: justify;
     display: flex;
     flex-direction: column;
+    text-justify: inter-word;
 }
 #deuil_img{
     max-height: 400px;
+}
+.transition-div{
+    margin-top: var(--space-md);
 }
 .transition-phrase {
     text-align: center;
     font-size: 1.3rem;
     font-weight: 600;
     color: var(--color-primary);
-    margin-top: var(--space-lg);
 }
+/* ======================= 6. À PROPOS ======================= */
+
 .about-section{
         background-color: var(--color-background-apropos);
     width:100%;
@@ -312,6 +344,8 @@ p {
 
 .bio-text {
     flex: 2;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .visual-placeholder {
@@ -338,149 +372,142 @@ p {
     margin-right: var(--space-xs);
 }
 
-/* ======================= 7. OFFRES ======================= */
-.offers-section {
-    background-color: var(--color-secondary);
-    text-align: center;
-    padding: var(--space-xl) var(--space-md); /* Utilisation des variables pour le padding */
+/* ======================= 7. OFFRES (FOCUS INDIVIDUEL) ======================= */
+.offers-section.single-offer-focus {
+    background-color: var(--color-background-main); 
+    padding: var(--space-xl) var(--space-md);
 }
 
 .offers-section h2 {
-    /* Styles de titre standard */
     font-size: 2.2rem;
     margin-bottom: var(--space-md);
+    color: var(--color-primary); 
 }
 
-.offers-section .tagline {
-    margin-bottom: var(--space-lg);
-    font-size: 1.1rem;
-    color: var(--color-text-dark);
+.offer-container-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: var(--space-lg);
+    align-items: center; 
 }
 
-.offers-grid {
-    display: flex;
-    gap: var(--space-md);
-    justify-content: center;
-    margin-top: var(--space-lg);
-}
-
-.offer-card {
-    background-color: var(--color-background-main);
-    padding: var(--space-md);
-    border-radius: var(--border-radius-card);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    max-width: 400px;
+.offers-intro{
+    padding: 0 100px;
     text-align: center;
-    transition: transform 0.3s ease;
-    
-    /* Structure Flex pour s'assurer que le footer reste en bas */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    margin-bottom: 0;
+}
+.offers-intro p{
+    margin-bottom: 0;
+}
+/* --- Styles de la citation (GAUCHE) --- */
+.quote-block {
+    padding: var(--space-md);
+    background-color: var(--color-secondary); 
+    border-radius: var(--border-radius-card);
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
-.offer-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-}
-
-.offer-card header .icon-large {
-    font-size: 2.5rem;
-    color: var(--color-primary);
-    margin-bottom: var(--space-xs);
-}
-
-.offer-card h3 {
-    color: var(--color-primary);
-    font-size: 1.5rem;
-    margin: 0 0 var(--space-xs) 0;
-}
-
-.offer-card header .subtitle {
-    font-size: 1rem;
-    color: var(--color-text-light);
+.hugo-quote {
+    font-size: 1.8rem;
+    font-style: italic;
+    font-weight: 500;
+    color: var(--color-text-dark);
+    line-height: 1.5;
     margin-bottom: var(--space-sm);
+    padding: 0 var(--space-xs);
+    border-left: 5px solid var(--color-primary);
+    text-align: left;
 }
 
-.offer-card .card-body {
-    flex-grow: 1; /* Permet au corps de prendre l'espace disponible */
+.quote-block cite {
+    display: block;
+    font-size: 1.1rem;
+    color: var(--color-primary);
+    text-align: right;
     margin-bottom: var(--space-md);
 }
 
-.offer-card h4 {
+.quote-description {
+    font-size: 1rem;
+    color: var(--color-text-light);
+    font-style: italic;
+}
+
+/* --- Styles du bloc de l'offre (DROITE) --- */
+.offer-details-block {
+    padding: var(--space-md);
+    background-color: #ffffff;
+}
+
+.offer-details-block h3 {
+    text-align: left;
+    color: var(--color-primary);
+    font-size: 1.8rem;
+    margin-top: 0;
+}
+
+.offer-details-block .subtitle {
+    font-size: 1.1rem;
+    color: var(--color-text-light);
+    margin-bottom: var(--space-md);
+}
+
+.key-benefits-list h4 {
     text-align: left;
     font-size: 1.2rem;
-    color: var(--color-primary);
+    color: var(--color-text-dark);
     margin-bottom: var(--space-sm);
 }
 
-/* Liste condensée pour les fonctionnalités */
 .features-list {
     list-style: none;
     padding: 0;
     text-align: left;
+    margin-bottom: var(--space-md);
 }
 
-.features-list.condensed-list {
-    margin: var(--space-sm) 0;
-}
-
-.features-list.condensed-list li {
-    font-size: 0.95rem;
-    padding: 5px 0;
-    font-weight: 400;
-    color: var(--color-text-dark);
+.features-list li {
+    font-size: 1rem;
+    padding: 8px 0;
     border-bottom: 1px dashed #eee;
+    color: var(--color-text-dark);
+    font-weight: 500;
 }
 
 .features-list li i {
     color: var(--color-primary);
     margin-right: var(--space-xs);
+    font-size: 1.1rem;
 }
 
-/* Pied de carte (Tarifs) */
-.offer-card footer.pricing {
-    margin-top: var(--space-md);
-    padding-top: var(--space-sm);
-    border-top: 1px solid var(--color-secondary);
-}
+/* Zone de Tarification et CTA */
 
-.offer-card footer.pricing p {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: var(--color-text-dark);
-    margin-bottom: var(--space-xs);
-}
-
-.offer-card footer.pricing .small-info {
-    font-size: 0.85rem;
-    font-weight: 400;
-    color: var(--color-text-light);
-    margin: 0 0 var(--space-sm) 0;
-}
-
-/* Bouton CTA dans la carte */
-.offers-section .cta-card-btn {
-    margin-top: var(--space-xs);
+.cta-main-btn {
     width: 100%;
-    padding: 10px 15px;
-    font-size: 0.95rem;
+    text-align: center;
+    margin-bottom: var(--space-sm);
+    padding: 15px 25px;
+    font-size: 1.1rem;
 }
+
 
 
 /* ======================= 7B. SECTION DÉTAILS INDIVIDUELS (Affichée après la section Offres) ======================= */
 .detail-section {
     background-color: var(--color-background-main);
-    padding: var(--space-xl) var(--space-md);
+    padding: var(--space-xl) 0;
 }
 
 .detail-container {
-    max-width: 900px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
 .detail-block {
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-md);
     padding: var(--space-md);
     border-radius: var(--border-radius-card);
     border: 1px solid #f0f0f0;
@@ -518,19 +545,24 @@ p {
 }
 
 /* Bloc Éthique et limites */
+.ethique-start-block{
+    display: flex;
+}
 .ethics-block {
+    max-width: 50%;
     background-color: #ffeaea; /* Fond très léger pour l'avertissement */
     border-left: 5px solid var(--color-primary);
-    padding: var(--space-md);
+    margin: var(--space-xl) var(--space-md);
 }
 
 .ethics-block .important-note {
     font-style: italic;
     color: var(--color-text-dark);
     line-height: 1.5;
+    margin: var(--space-xl) var(--space-md);
+
 }
 
-/* Étapes pour commencer */
 .start-steps {
     list-style: none;
     padding: 0;
@@ -552,6 +584,7 @@ p {
 }
 
 .cta-final {
+    margin-bottom:var(--space-xs);
     text-align: center;
     border: none;
     background: none;
@@ -704,5 +737,111 @@ footer a:hover {
 
     .butterfly-deco {
         left: -10%;
+    }
+    /* --- 7. OFFRES (FOCUS INDIVIDUEL) --- */
+    
+    .offers-section.single-offer-focus {
+        padding: var(--space-lg) var(--space-md);
+    }
+
+    /* Empilement des deux colonnes (Citation et Offre) sur mobile */
+    .offer-container-grid {
+        grid-template-columns: 1fr; /* Passage à une seule colonne */
+        gap: var(--space-md);
+    }
+
+    /* Ajustement de la largeur des offres-intro */
+    .offers-intro {
+        padding: 0 var(--space-xs); /* Réduction du padding */
+    }
+
+    /* Inverser l'ordre : l'offre vient avant la citation sur mobile */
+    .offer-details-block {
+        order: 1; 
+        padding: var(--space-md) var(--space-xs); /* Réduction du padding */
+    }
+
+    .quote-block {
+        order: 2; /* Citation après l'offre pour prioriser le CTA */
+        padding: var(--space-md) var(--space-xs);
+    }
+    
+    /* Ajustement de la citation */
+    .hugo-quote {
+        font-size: 1.4rem; /* Réduction de la taille de police */
+        padding: 0; /* Suppression du padding */
+        border-left: none; /* Suppression de la barre latérale pour un affichage centré */
+        text-align: center;
+    }
+    
+    .quote-block cite {
+        text-align: center;
+        font-size: 1rem;
+    }
+    
+    /* Ajustement des titres de l'offre pour centrage */
+    .offer-details-block h3, 
+    .key-benefits-list h4 {
+        text-align: center;
+    }
+
+    .features-list {
+        text-align: center; /* Centrer les icônes/listes si le texte n'est pas trop long */
+        padding: 0 var(--space-sm);
+    }
+    
+    .features-list li {
+        font-size: 0.95rem;
+    }
+
+
+    /* --- 7B. SECTION DÉTAILS INDIVIDUELS --- */
+    
+    .detail-section {
+        padding: var(--space-lg) var(--space-md);
+    }
+    
+    .detail-container {
+         /* max-width: 100% est déjà en place, on ajoute le padding intérieur */
+         padding: 0;
+    }
+
+    .detail-block {
+        margin-bottom: var(--space-sm);
+        padding: var(--space-md) var(--space-xs);
+        border-radius: 0; /* Optionnel : supprimer les arrondis aux bords de l'écran */
+    }
+
+    /* Grille de la Timeline : Empilement */
+    .timeline-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .timeline-item {
+        border-left: none; /* Suppression de la barre latérale gauche */
+        border-top: 3px solid var(--color-highlight-text); /* Déplacement de la barre en haut */
+        padding-top: var(--space-sm);
+    }
+
+    /* Bloc Éthique et Start-Steps */
+    .ethique-start-block {
+        flex-direction: column; /* Empilement */
+    }
+    
+    .ethics-block {
+        max-width: 100%; /* Pleine largeur */
+        margin: var(--space-md) 0; /* Retirer les marges latérales */
+    }
+
+    .ethics-block .important-note {
+        margin: var(--space-sm) 0;
+    }
+    
+    .start-steps li {
+        font-size: 1rem;
+    }
+    
+    .cta-final {
+        padding: var(--space-md) 0;
     }
 }

@@ -49,3 +49,44 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+document.addEventListener('DOMContentLoaded', () => {
+    // ... (votre code existant pour l'accordéon et le scroll fluide) ...
+
+    // ------------------------------------
+    // 3. SMART HEADER (Apparaît au scroll-up)
+    // ------------------------------------
+    const header = document.querySelector('.main-header');
+    if (header) { // S'assurer que l'élément existe
+        let lastScrollTop = 0; // Stocker la position de défilement précédente
+        const scrollThreshold = 50; // Distance minimale de défilement pour déclencher le masquage/affichage
+
+        window.addEventListener('scroll', () => {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+            // Logique de masquage : Scroll vers le bas (Down)
+            if (currentScroll > lastScrollTop && currentScroll > header.offsetHeight + scrollThreshold) {
+                // Défilement vers le bas ET nous sommes au-delà de la zone supérieure
+                header.classList.remove('scroll-up');
+                header.classList.add('scroll-down');
+            } 
+            
+            // Logique d'affichage : Scroll vers le haut (Up)
+            else if (currentScroll < lastScrollTop) {
+                // Défilement vers le haut
+                header.classList.remove('scroll-down');
+                header.classList.add('scroll-up');
+            } 
+            
+            // Logique d'affichage initial : Toujours visible en haut de la page
+            else if (currentScroll <= scrollThreshold) {
+                 header.classList.remove('scroll-down');
+                 header.classList.add('scroll-up');
+            }
+
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Mettre à jour la dernière position
+        });
+        
+        // Assurer que le header est visible au chargement de la page
+        header.classList.add('scroll-up');
+    }
+});
