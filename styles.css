@@ -6,6 +6,7 @@
     --color-text-dark: #333333; /* Texte principal foncé */
     --color-text-light: #6A6A6A; /* Texte secondaire/corps */
     --color-background-main: #FFFFFF; /* Fond des blocs de contenu */
+    --color-background-apropos:#fff5c3;/*Fond du bloc a propos*/
     --color-button-primary: #D1307F; /* Couleur principale pour les boutons */
     --color-button-hover: #B5286D;
     --color-linkedin: #0A66C2; /* Couleur LinkedIn */
@@ -16,7 +17,7 @@
     --font-size-base: 18px;
 
     /* Espacement */
-    --space-xl: 120px;
+    --space-xl: 10px;
     --space-lg: 80px;
     --space-md: 40px;
     --space-sm: 20px;
@@ -27,7 +28,6 @@
     --border-radius-card: 15px;
 }
 
-/* Importation d'une police Google (à ajouter dans l'HTML si vous voulez l'utiliser) */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 
@@ -47,7 +47,6 @@ body {
 }
 
 main {
-    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -57,6 +56,7 @@ section {
 
 h1, h2, h3 {
     color: var(--color-text-dark);
+    margin-top: var(--space-xs);
     margin-bottom: var(--space-md);
     font-weight: 700;
     text-align: center;
@@ -85,7 +85,7 @@ p {
     border-radius: var(--border-radius-btn);
 }
 
-/* Bouton Principal (Header/Fin de page) - Inspiré du rose du Canva */
+/* Bouton Principal (Header/Fin de page) */
 .btn-primary {
     background-color: var(--color-button-primary);
     color: var(--color-background-main);
@@ -144,17 +144,19 @@ p {
 .highlight-color-dark {
     color: var(--color-primary);
 }
-
+/* Texte en gras */
+.bold{
+    font-weight: bold;
+}
 
 /* ======================= 4. HEADER & NAVIGATION ======================= */
 .main-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--space-sm) var(--space-md);
+    padding: var(--space-xs) var(--space-md);
     background-color: var(--color-background-main);
     border-bottom: 1px solid #eee;
-    /* Rendre le header fixe ou collant si désiré, ici il est simple */
 }
 
 .logo-container {
@@ -162,10 +164,8 @@ p {
     align-items: center;
 }
 
-/* Placeholder pour votre logo (à styliser ou à remplacer) */
 .logo-container .logo-image {
-    height: 50px; /* Taille de l'image de l'arc-en-ciel */
-    margin-right: var(--space-xs);
+    height: 80px; 
 }
 
 .logo-text p {
@@ -209,7 +209,7 @@ p {
     align-items: center;
     text-align: center;
     position: relative;
-    overflow: hidden; /* Pour contenir les décorations */
+    overflow: hidden; 
 }
 
 .hero-content {
@@ -239,7 +239,7 @@ p {
     width: 250px;
     height: 250px;
     object-fit: cover;
-    border-radius: 50%; /* Rendre la photo ronde */
+    border-radius: 50%;
     border: 5px solid var(--color-background-main);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
@@ -268,23 +268,29 @@ p {
 }
 
 /* ======================= 6. EXPLICATION DEUIL & À PROPOS ======================= */
-.info-section, .about-section {
+.info-section{
     background-color: var(--color-background-main);
     border-radius: var(--border-radius-card);
     margin: var(--space-lg) auto;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    max-width: 1000px;
+    max-width: 1200px;
 }
 
 .info-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     gap: var(--space-md);
-    text-align: left;
+    
     margin: 0 auto var(--space-md);
     padding: 0 var(--space-md);
 }
-
+.info-grid-text{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+#deuil_img{
+    max-height: 400px;
+}
 .transition-phrase {
     text-align: center;
     font-size: 1.3rem;
@@ -292,7 +298,10 @@ p {
     color: var(--color-primary);
     margin-top: var(--space-lg);
 }
-
+.about-section{
+        background-color: var(--color-background-apropos);
+    width:100%;
+}
 .about-content {
     display: flex;
     gap: var(--space-lg);
@@ -306,12 +315,13 @@ p {
 }
 
 .visual-placeholder {
-    flex: 1;
     min-height: 250px;
     background-color: var(--color-secondary);
     border-radius: var(--border-radius-card);
 }
-
+#apropos_img{
+    max-height: 450px;
+}
 .bio-text ul {
     list-style: none;
     padding: 0;
@@ -332,6 +342,19 @@ p {
 .offers-section {
     background-color: var(--color-secondary);
     text-align: center;
+    padding: var(--space-xl) var(--space-md); /* Utilisation des variables pour le padding */
+}
+
+.offers-section h2 {
+    /* Styles de titre standard */
+    font-size: 2.2rem;
+    margin-bottom: var(--space-md);
+}
+
+.offers-section .tagline {
+    margin-bottom: var(--space-lg);
+    font-size: 1.1rem;
+    color: var(--color-text-dark);
 }
 
 .offers-grid {
@@ -349,6 +372,11 @@ p {
     max-width: 400px;
     text-align: center;
     transition: transform 0.3s ease;
+    
+    /* Structure Flex pour s'assurer que le footer reste en bas */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .offer-card:hover {
@@ -356,28 +384,177 @@ p {
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
 }
 
+.offer-card header .icon-large {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    margin-bottom: var(--space-xs);
+}
+
 .offer-card h3 {
     color: var(--color-primary);
     font-size: 1.5rem;
-    margin-top: 0;
+    margin: 0 0 var(--space-xs) 0;
 }
 
+.offer-card header .subtitle {
+    font-size: 1rem;
+    color: var(--color-text-light);
+    margin-bottom: var(--space-sm);
+}
+
+.offer-card .card-body {
+    flex-grow: 1; /* Permet au corps de prendre l'espace disponible */
+    margin-bottom: var(--space-md);
+}
+
+.offer-card h4 {
+    text-align: left;
+    font-size: 1.2rem;
+    color: var(--color-primary);
+    margin-bottom: var(--space-sm);
+}
+
+/* Liste condensée pour les fonctionnalités */
 .features-list {
     list-style: none;
     padding: 0;
-    margin: var(--space-md) 0;
     text-align: left;
 }
 
-.features-list li {
-    padding: var(--space-xs) 0;
+.features-list.condensed-list {
+    margin: var(--space-sm) 0;
+}
+
+.features-list.condensed-list li {
+    font-size: 0.95rem;
+    padding: 5px 0;
+    font-weight: 400;
+    color: var(--color-text-dark);
     border-bottom: 1px dashed #eee;
-    color: var(--color-text-light);
 }
 
 .features-list li i {
     color: var(--color-primary);
     margin-right: var(--space-xs);
+}
+
+/* Pied de carte (Tarifs) */
+.offer-card footer.pricing {
+    margin-top: var(--space-md);
+    padding-top: var(--space-sm);
+    border-top: 1px solid var(--color-secondary);
+}
+
+.offer-card footer.pricing p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color-text-dark);
+    margin-bottom: var(--space-xs);
+}
+
+.offer-card footer.pricing .small-info {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--color-text-light);
+    margin: 0 0 var(--space-sm) 0;
+}
+
+/* Bouton CTA dans la carte */
+.offers-section .cta-card-btn {
+    margin-top: var(--space-xs);
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 0.95rem;
+}
+
+
+/* ======================= 7B. SECTION DÉTAILS INDIVIDUELS (Affichée après la section Offres) ======================= */
+.detail-section {
+    background-color: var(--color-background-main);
+    padding: var(--space-xl) var(--space-md);
+}
+
+.detail-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.detail-block {
+    margin-bottom: var(--space-lg);
+    padding: var(--space-md);
+    border-radius: var(--border-radius-card);
+    border: 1px solid #f0f0f0;
+    background-color: #fcfcfc;
+}
+
+.detail-block h3 {
+    text-align: left;
+    color: var(--color-primary);
+    font-size: 1.8rem;
+    margin-bottom: var(--space-md);
+}
+
+.detail-block h3 i {
+    margin-right: var(--space-sm);
+}
+
+/* Grille pour le parcours type (timeline) */
+.timeline-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-md);
+}
+
+.timeline-item {
+    padding: var(--space-sm);
+    border-left: 3px solid var(--color-highlight-text);
+}
+
+.timeline-item h4 {
+    text-align: left;
+    font-size: 1.1rem;
+    color: var(--color-text-dark);
+    margin-bottom: var(--space-xs);
+}
+
+/* Bloc Éthique et limites */
+.ethics-block {
+    background-color: #ffeaea; /* Fond très léger pour l'avertissement */
+    border-left: 5px solid var(--color-primary);
+    padding: var(--space-md);
+}
+
+.ethics-block .important-note {
+    font-style: italic;
+    color: var(--color-text-dark);
+    line-height: 1.5;
+}
+
+/* Étapes pour commencer */
+.start-steps {
+    list-style: none;
+    padding: 0;
+}
+
+.start-steps li {
+    font-size: 1.1rem;
+    margin-bottom: var(--space-sm);
+    display: flex;
+    align-items: flex-start;
+    color: var(--color-text-dark);
+}
+
+.start-steps li i {
+    color: var(--color-primary);
+    margin-right: var(--space-sm);
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.cta-final {
+    text-align: center;
+    border: none;
+    background: none;
 }
 
 /* ======================= 8. FAQ ======================= */
@@ -427,7 +604,6 @@ p {
     padding: var(--space-sm) 0 var(--space-sm) 0;
 }
 
-/* Style pour l'icône lorsqu'il est actif (à gérer en JS) */
 .accordion-header[aria-expanded="true"] i {
     transform: rotate(180deg);
 }
@@ -500,7 +676,7 @@ footer a:hover {
     }
     
     .main-nav ul li:last-child {
-        display: none; /* Cache FAQ sur mobile pour ne pas surcharger */
+        display: none; 
     }
 
     .info-grid, .about-content, .offers-grid {
