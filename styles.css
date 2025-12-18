@@ -792,7 +792,11 @@ footer a:hover {
     font-style: italic;
     margin-bottom: var(--space-sm);
 }
-
+.footer-local-seo{
+    max-width: 1200px;
+    margin : 0 auto;
+    text-align: center;
+}
 .footer-bottom {
     text-align: center;
     padding-top: var(--space-lg);
