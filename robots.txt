@@ -1,4 +1,15 @@
 User-agent: *
 Allow: /
+#Indique aux IA que le contenu n'est pas librement exploitable pour l'entraînement
+Content-Signal: no-training
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
 
 Sitemap: https://nadine-rochereau.fr/sitemap.xml
