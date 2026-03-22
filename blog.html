@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Deuil Périnatal | Nadine Rochereau</title>
+  <meta name="description" content="Articles et ressources sur le deuil périnatal par Nadine Rochereau. Conseils, témoignages et accompagnement pour les parents endeuillés.">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://unpkg.com/marked/marked.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+  <header class="main-header scroll-up">
+    <div class="logo-container">
+      <img src="img/logo.png" alt="Logo Les Couleurs de la Vie Nadine Rochereau" class="logo-image">
+      <div class="logo-text">
+        <p>Les Couleurs de la Vie</p>
+        <p>Nadine Rochereau</p>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="index.html#apropos">À propos</a></li>
+        <li><a href="index.html#offres">Accompagnement</a></li>
+        <li><a href="index.html#details-individuel">Parcours</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+        <li><a href="blog.html" style="color: var(--color-primary);">Blog</a></li>
+      </ul>
+    </nav>
+    <div class="header_button">
+      <a href="https://calendly.com/nadine-rochereau2/30min" class="btn-primary">Réserver un appel</a>
+      <a href="https://www.linkedin.com/in/nadine-rochereau-3229ab363/" class="btn-linkedin" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="blog-hero">
+      <h1>Blog & <span class="highlight-color-dark">Ressources</span></h1>
+      <p>Des mots pour accompagner, des témoignages pour ne pas se sentir seul·e, des repères pour avancer.</p>
+    </section>
+
+    <section class="blog-grid-section">
+      <div id="blog-container" class="blog-loading">
+        <i class="fas fa-spinner fa-spin" style="font-size:2rem; color: var(--color-primary);"></i>
+        <p>Chargement des articles...</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-col footer-info">
+        <h3>Informations</h3>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="index.html#apropos">À propos</a></li>
+          <li><a href="index.html#offres">Accompagnement</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-contact">
+        <h3>Contact</h3>
+        <p>
+          <a href="mailto:nadine.rochereau2@gmail.com">nadine.rochereau2@gmail.com</a><br>
+          <a href="https://www.linkedin.com/in/nadine-rochereau-3229ab363/">LinkedIn</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Les Couleurs de la Vie - Nadine Rochereau. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Charge et affiche les articles depuis les fichiers Markdown du dossier /blog
+    async function loadBlogPosts() {
+      const container = document.getElementById('blog-container');
+      
+      try {
+        // Récupère l'index des articles généré automatiquement
+        const response = await fetch('blog/index.json');
+        
+        if (!response.ok) {
+          showEmpty(container);
+          return;
+        }
+
+        const posts = await response.json();
+        const published = posts
+          .filter(p => p.published !== false)
+          .sort((a, b) => new Date(b.date) - new Date(a.date));
+
+        if (published.length === 0) {
+          showEmpty(container);
+          return;
+        }
+
+        container.className = 'blog-grid';
+        container.innerHTML = published.map(post => buildCard(post)).join('');
+
+      } catch (e) {
+        showEmpty(container);
+      }
+    }
+
+    function buildCard(post) {
+      const date = new Date(post.date).toLocaleDateString('fr-FR', {
+        day: 'numeric', month: 'long', year: 'numeric'
+      });
+
+      const cover = post.cover_image
+        ? `<img src="${post.cover_image}" alt="${post.title}" class="blog-card-cover">`
+        : `<div class="blog-card-cover-placeholder"><i class="fas fa-heart"></i></div>`;
+
+      return `
+        <article class="blog-card">
+          ${cover}
+          <div class="blog-card-body">
+            <p class="blog-card-date"><i class="fas fa-calendar-alt" style="margin-right:5px;"></i>${date}</p>
+            <h2 class="blog-card-title">${post.title}</h2>
+            <p class="blog-card-excerpt">${post.excerpt || ''}</p>
+            <a href="/blog/${post.slug}.html" class="blog-card-link">
+              Lire l'article <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>`;
+    }
+
+    function showEmpty(container) {
+      container.className = 'blog-empty';
+      container.innerHTML = `
+        <i class="fas fa-feather-alt"></i>
+        <p style="font-size:1.1rem; font-weight:600; color: var(--color-text-dark);">Les premiers articles arrivent bientôt</p>
+        <p>Nadine partagera ici des ressources et des réflexions sur le deuil périnatal.</p>`;
+    }
+
+    loadBlogPosts();
+  </script>
+
+</body>
+</html>
