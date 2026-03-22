@@ -2,9 +2,7 @@
 title: " Le deuil périnatal : quand la perte d'un bébé fragilise le couple."
 date: 2026-03-22
 cover_image: /img/blog/1773678258297.png
-excerpt:
-  Même perte, deux deuils. Pourquoi les couples ne vivent pas la même chose
-  après la perte d'un bébé et ce que ça change pour la suite.
+excerpt: "Même perte, deux deuils. Pourquoi les couples ne vivent pas la même chose après la perte d'un bébé et ce que ça change pour la suite."
 
 published: true
 ---
