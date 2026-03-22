@@ -35,7 +35,7 @@ if (!fs.existsSync(blogDir)) {
   console.log('Dossier /blog créé.');
 }
 
-const files = fs.readdirSync(blogDir).filter(f => f.endsWith('.md'));
+const files = fs.readdirSync(blogDir).filter(f => f.endsWith('.md') && f!="README.md");
 
 if (files.length === 0) {
   // Génère un index vide

@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog - Deuil Périnatal | Nadine Rochereau</title>
   <meta name="description" content="Articles et ressources sur le deuil périnatal par Nadine Rochereau. Conseils, témoignages et accompagnement pour les parents endeuillés.">
-  <link rel="icon" type="image/png" href="/img/favicon.png">
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" type="image/png" href="img/favicon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <script src="https://unpkg.com/marked/marked.min.js"></script>
   <link rel="stylesheet" href="styles.css">
@@ -127,7 +126,7 @@
             <h2 class="blog-card-title">${post.title}</h2>
             <p class="blog-card-excerpt">${post.excerpt || ''}</p>
             <a href="/blog/${post.slug}.html" class="blog-card-link">
-              Lire l'article <i class="fas fa-arrow-right"></i>
+              Voir l'article <i class="fas fa-arrow-right"></i>
             </a>
           </div>
         </article>`;
@@ -136,7 +135,6 @@
     function showEmpty(container) {
       container.className = 'blog-empty';
       container.innerHTML = `
-        <i class="fas fa-feather-alt"></i>
         <p style="font-size:1.1rem; font-weight:600; color: var(--color-text-dark);">Les premiers articles arrivent bientôt</p>
         <p>Nadine partagera ici des ressources et des réflexions sur le deuil périnatal.</p>`;
     }
