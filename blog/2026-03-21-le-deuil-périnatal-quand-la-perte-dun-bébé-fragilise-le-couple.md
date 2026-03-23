@@ -19,6 +19,3 @@ Cette dissonance non accompagnée a un coût social immense. On estime que plus 
 
 Ma double expertise d'ancienne responsable en prévention et d'accompagnante/pair aidante formée me permet de décrypter ces dynamiques silencieuses. J'interviens pour briser l'isolement, restaurer la communication et permettre à chacun de retrouver sa sérénité et ses ressources.
 En tant qu’organisation, proposer un soutien adapté, c’est agir concrètement pour la santé mentale de vos talents.
-
-👉 Décideurs RH, Responsables RSE, Dirigeants de Mutuelle : Ce sujet est au cœur des enjeux de la Grande Cause Nationale 2025. 
-Contactez-moi en MP pour échanger sur la manière dont mon programme hybride (collectif et individuel) peut sécuriser le parcours de vos \[salariés/adhérents].

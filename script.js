@@ -79,3 +79,30 @@ document.addEventListener('DOMContentLoaded', () => {
                 header.classList.add('scroll-up');
     }
 });
+
+// MENU HAMBURGER
+const hamburgerBtn = document.getElementById('hamburger-btn');
+const drawer = document.getElementById('drawer');
+const drawerOverlay = document.getElementById('drawer-overlay');
+const drawerClose = document.getElementById('drawer-close');
+
+function openDrawer() {
+    drawer.classList.add('open');
+    drawerOverlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeDrawer() {
+    drawer.classList.remove('open');
+    drawerOverlay.classList.remove('open');
+    document.body.style.overflow = '';
+}
+
+if (hamburgerBtn) hamburgerBtn.addEventListener('click', openDrawer);
+if (drawerClose) drawerClose.addEventListener('click', closeDrawer);
+if (drawerOverlay) drawerOverlay.addEventListener('click', closeDrawer);
+
+// Ferme le drawer quand on clique sur un lien
+document.querySelectorAll('.drawer ul a').forEach(link => {
+    link.addEventListener('click', closeDrawer);
+});

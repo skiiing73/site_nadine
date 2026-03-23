@@ -170,9 +170,6 @@ function buildArticlePage(data, htmlContent, slug) {
         ${htmlContent}
       </div>
       <div class="article-footer">
-        <p style="font-size:1.1rem; color: var(--color-text-dark); font-weight:600;">Cet article vous a touché·e ?</p>
-        <a href="https://calendly.com/nadine-rochereau2/30min" class="btn-primary" style="margin-top:10px;">Réserver un appel découverte gratuit</a>
-        <br><br>
         <a href="/blog.html" class="back-link"><i class="fas fa-arrow-left"></i> Voir tous les articles</a>
       </div>
     </div>

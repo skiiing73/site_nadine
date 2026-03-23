@@ -56,14 +56,18 @@
 <body>
 
     <header class="main-header">
-        <div class="logo-container">
-            <img src="img/logo.png" alt="Logo Les Couleurs de la Vie Nadine Rochereau" class="logo-image">
-            <div class="logo-text">
-                <p>Les Couleurs de la Vie</p>
-                <p>Nadine Rochereau</p>
+        <div class="header-left">
+            <button class="hamburger-btn" id="hamburger-btn" aria-label="Ouvrir le menu">
+                <img src="img/hamburger.svg" alt="Menu" width="24" height="24">
+            </button>
+            <div class="logo-container">
+                <img src="img/logo.png" alt="Logo Les Couleurs de la Vie Nadine Rochereau" class="logo-image">
+                <div class="logo-text">
+                    <p>Les Couleurs</p>
+                    <p>de la Vie</p>
+                </div>
             </div>
         </div>
-
         <nav class="main-nav">
             <ul>
                 <li><a href="#accueil">Accueil</a></li>
@@ -83,12 +87,30 @@
         
         
     </header>
+    <div class="drawer-overlay" id="drawer-overlay"></div>
+    <nav class="drawer" id="drawer">
+        <button class="drawer-close" id="drawer-close" aria-label="Fermer le menu">✕</button>
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#offres">Accompagnement</a></li>
+            <li><a href="#details-individuel">Parcours</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+        <a href="https://calendly.com/nadine-rochereau2/30min" class="btn-primary" style="margin-top: auto;">
+            Réserver un appel
+        </a>
+        <a href="https://www.linkedin.com/in/nadine-rochereau-3229ab363/" class="btn-linkedin" aria-label="Profil Linkedin de Nadine Rochereau" title="Suivre Nadine Rochereau sur LinkedIn">
+                <i class="fab fa-linkedin"></i>
+        </a>
+    </nav>
     <main>
         <section id="accueil" class="hero-section">
             <div class="hero-content">
                 <h1 class="headline-choc">
                     POUR VOUS AIDER À REMETTRE DE LA <span class="highlight-color">COULEUR</span>
-                    DANS VOTRE <span class="highlight-color-dark">VIE</span> APRÈS LA PERTE D'UN TOUT PETIT
+                    DANS VOTRE <span class="highlight-color-dark">VIE</span> APRÈS UN DEUIL PÉRINATAL
                 </h1>
                 <p class="tagline">
                     J'accompagne les parents endeuillés après la perte de leur bébé pour  <span class="bold">offrir un soutien doux, juste et humain</span> dans ces moments où plus rien n’a de sens.
