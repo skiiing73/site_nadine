@@ -38,7 +38,7 @@
 .blog-card-cover {
     width: 100%;
     height: auto;        
-    max-height: 300px;   
+    max-height: 175px;   
     object-fit: contain;
     background-color: var(--color-secondary);
 }

@@ -81,11 +81,13 @@ function buildArticlePage(data, htmlContent, slug) {
     }
     .article-cover {
       width: 100%;
+      height: auto;
       max-height: 400px;
-      object-fit: cover;
+      object-fit: contain;
+      background-color: var(--color-secondary);
       border-radius: var(--border-radius-card);
       margin-bottom: var(--space-md);
-    }
+  }
     .article-body {
       max-width: 780px;
       margin: var(--space-lg) auto;
