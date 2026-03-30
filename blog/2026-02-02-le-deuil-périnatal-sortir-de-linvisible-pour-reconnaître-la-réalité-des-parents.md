@@ -3,10 +3,7 @@ title: "Le deuil périnatal : sortir de l'invisible pour reconnaître la réalit
   des parents."
 date: 2026-02-03
 cover_image: /img/blog/02.-symbole-deuil-périnatal.png
-excerpt: Parce que mettre des mots sur l’indicible est le premier pas vers la
-  reconnaissance, cet article définit les contours du deuil périnatal. Entre
-  tabous, maladresses de l’entourage et impacts profonds sur la vie personnelle
-  et professionnelle, explorons ensemble comment briser le silence.
+excerpt: Parce que mettre des mots sur l’indicible est le premier pas vers la reconnaissance, cet article définit les contours du deuil périnatal. Entre tabous, maladresses de l’entourage et impacts profonds sur la vie personnelle et professionnelle, explorons ensemble comment briser le silence.
 published: true
 ---
 **Le deuil périnatal… de quoi parle-t-on exactement ?**
