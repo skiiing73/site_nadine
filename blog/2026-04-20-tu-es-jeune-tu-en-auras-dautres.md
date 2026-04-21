@@ -1,6 +1,7 @@
 ---
 title: Tu es jeune tu en auras d'autres
 date: 2026-04-21
+cover_image: /img/blog/05.-tu-es-jeune.png
 excerpt: >-
   « Tu en auras d'autres. » À travers cette phrase choc, cet article dénonce le
   tabou qui entoure la perte d'un enfant. J'y explore les émotions taboues que
