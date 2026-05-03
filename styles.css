@@ -469,48 +469,36 @@ body {
 }
 
 /* ======================= 6. FORMATIONS (CARROUSEL HORIZONTAL) ======================= */
-#formations{
-    padding-bottom:var(--space-md);
+#formations {
+    padding-bottom: var(--space-md);
 }
 
-.formations-carrousel{
-    max-width: 1200px;
-    overflow: hidden; 
+.formations-carrousel {
+    overflow: hidden;
     padding: var(--space-sm) 0;
-    display: flex;
-    > * {
-      flex: 0 0 100%;
-    }
-    &:hover .formations-group {
-      animation-play-state: paused;
-    }
+    cursor: default;
 }
-.formations-group {
+
+.formations-track {
     display: flex;
     gap: var(--space-sm);
-    padding-right: var(--space-sm);
-     will-change: transform; 
-    animation: scrolling 25s linear infinite;
-  }
-@keyframes scrolling {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
+    width: max-content;
 }
 
 .formation-card {
-    width:100%;
+    width: 240px;
+    flex-shrink: 0;
     padding: var(--space-md);
     background-color: var(--color-secondary);
     border-radius: var(--border-radius-card);
     text-align: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease;
     min-height: 200px;
- 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xs);
 }
 
 .formation-card i {
@@ -530,7 +518,6 @@ body {
     color: var(--color-text-light);
     margin: 0;
 }
-
 
 /* ======================= 7. OFFRES (FOCUS INDIVIDUEL) ======================= */
 .offers-section.single-offer-focus {
@@ -970,46 +957,6 @@ footer a:hover {
     .butterfly-deco {
         left: -10%;
     }
-     /* --- Formation --- */
-    .formations-carrousel {
-        width: 100%; 
-        flex-direction: column; 
- 
-    }
-
-    .formations-group {
-        flex-wrap: wrap; 
-        justify-content: center;
-        gap: var(--space-sm);
-        padding-right: 0;
-        width: 100%;
-        margin-bottom: var(--space-md); 
-        animation: none !important; 
-    }
-    
-    .formations-group[aria-hidden="true"] {
-        display: none;
-    }
-    
-    .formation-card {
-
-        width: calc(50% - (var(--space-sm) / 2)); 
-        min-width: unset; 
-        padding: var(--space-sm);
-        min-height: 160px;
-    }
-    .formation-card i {
-        font-size: 1.5rem;
-    }
-
-    .formation-card h4 {
-        font-size: 1.1rem;
-    }
-
-    .formation-card p {
-        font-size: 0.8rem;
-    }
-
      /* --- Accompagnement --- */
     /* Empilement des deux colonnes (Citation et Offre) sur mobile */
     .offer-container-grid {

@@ -2,19 +2,10 @@
 title: Pourquoi parle-t-on si peu du deuil périnatal ?
 date: 2026-04-07
 cover_image: /img/blog/03.-reconnaitre-c’est-déjà-soutenir.png
-excerpt: >-
-  Le silence qui entoure la perte d'un bébé naît souvent d'une peur de "mal
-  dire". Pourtant, ce silence isole. J'explique pourquoi briser ce tabou est
-  essentiel : il ne s'agit pas de remuer la plaie, mais de reconnaître
-  l'existence d'un enfant et d'une histoire.
-
+excerpt: Le silence qui entoure la perte d'un bébé naît souvent d'une peur de "mal dire". Pourtant, ce silence isole. J'explique pourquoi briser ce tabou est essentiel : il ne s'agit pas de remuer la plaie, mais de reconnaître l'existence d'un enfant et d'une histoire.
   L'essentiel à retenir :
-
   Les mots qui sauvent : "Je suis là", "Je pense à votre bébé".
-
   Les pièges à éviter : Les phrases qui cherchent à minimiser la perte.
-
-
   L'objectif : Dire aux parents que leur douleur est légitime et qu’ils ne sont pas seuls.
 published: true
 ---

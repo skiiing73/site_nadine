@@ -106,3 +106,29 @@ if (drawerOverlay) drawerOverlay.addEventListener('click', closeDrawer);
 document.querySelectorAll('.drawer ul a').forEach(link => {
     link.addEventListener('click', closeDrawer);
 });
+
+
+// Partie Formations
+const track = document.getElementById('track');
+const origCards = Array.from(track.children);
+
+// Duplique les cartes une seule fois
+origCards.forEach(c => track.appendChild(c.cloneNode(true)));
+
+const totalWidth = origCards[0].offsetWidth + 16; // 16 = gap en px
+const groupWidth = totalWidth * origCards.length;
+
+let x = 0;
+let paused = false;
+
+document.getElementById('wrap').addEventListener('mouseenter', () => paused = true);
+document.getElementById('wrap').addEventListener('mouseleave', () => paused = false);
+
+(function animate() {
+  if (!paused) {
+    x -= 1; // vitesse
+    if (x <= -groupWidth) x += groupWidth;
+    track.style.transform = `translateX(${x}px)`;
+  }
+  requestAnimationFrame(animate);
+})();
