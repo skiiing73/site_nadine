@@ -1,5 +1,5 @@
 ---
-title: Ai-je vraiment le droit d’être triste ? 💔
+title: "Ai-je vraiment le droit d’être triste ? "
 date: 2026-05-05
 cover_image: /img/blog/14.-ai-je-vriament-le-droit-d-etre-triste.png
 excerpt: Cet article aborde la légitimité du chagrin après un deuil périnatal,
@@ -11,7 +11,7 @@ excerpt: Cet article aborde la légitimité du chagrin après un deuil périnata
   silence.
 published: true
 ---
-Ai-je vraiment le droit d’être triste ? 💔
+Ai-je vraiment le droit d’être triste ? 
 
 C’est la question qui revient souvent, comme un murmure coupable, lors d'un deuil périnatal. Surtout quand il survient "tôt".
 
