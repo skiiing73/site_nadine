@@ -12,8 +12,6 @@ excerpt: >-
   L'article rappelle également que des accompagnements individuels à distance restent accessibles pour les personnes hors de la Savoie, Paris, Lyon ou partout en France.
 published: true
 ---
-
-
 « 𝗘𝘁 𝘀𝗶 𝗼𝗻 𝗽𝗮𝗿𝗹𝗮𝗶𝘁 𝗱𝘂 𝗱𝗲𝘂𝗶𝗹 𝗮𝘂𝘁𝗿𝗲𝗺𝗲𝗻𝘁, 𝘀𝗶𝗺𝗽𝗹𝗲𝗺𝗲𝗻𝘁 𝗮𝘂 𝗰𝗮𝗳𝗲́ 𝗱𝘂 𝗰𝗼𝗶𝗻? » 
 
 Le deuil fait partie de la vie. Pourtant, lorsqu’on traverse la perte d’un proche ou d’un tout-petit, le silence s’installe souvent. On n’ose pas déranger, on se sent décalé, et l’isolement peut grandir au milieu d’un monde qui continue de tourner à toute vitesse.
@@ -30,7 +28,7 @@ Certaines personnes ressentent le besoin de raconter leur histoire. D’autres p
 
 Avec Joy Perry, nous veillons à offrir un cadre d’écoute chaleureux, respectueux et sécurisant, afin que chacun puisse trouver sa place librement.
 
-𝗘𝗻𝗽𝗿𝗮𝘁𝗶𝗾𝘂𝗲:
+𝗘𝗻 𝗽𝗿𝗮𝘁𝗶𝗾𝘂𝗲:
 📅 Dimanche7 juin à 10h
 📍Allez Café Vélo, Bourg-Saint-Maurice
 
