@@ -68,4 +68,4 @@ Accompagner, ce n’est pas avoir toutes les réponses. C’est accepter que cer
 
 Offrez-vous ou proposez à vos collaborateurs un appel découverte gratuit de 30 minutes, entièrement confidentiel et sans aucun engagement. Un temps pour échanger, déposer votre histoire et voir comment nous pouvons avancer ensemble. 
 
-**Réserver un appel découverte très facilement depuis mon site**
+**Réservez un appel découverte très facilement depuis mon site**
