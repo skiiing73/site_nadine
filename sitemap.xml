@@ -3,14 +3,45 @@
   
   <url>
     <loc>https://nadine-rochereau.fr/</loc>
-    <lastmod>2025-12-17</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
+    <loc>https://nadine-rochereau.fr/blog</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://www.nadine-rochereau.fr/blog/caf%C3%A9-deuil-%C3%A0-bourg-saint-maurice.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.nadine-rochereau.fr/blog/ai-je-vraiment-le-droit-d%E2%80%99%C3%AAtre-triste-%F0%9F%92%94.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+    <url>
+    <loc>https://www.nadine-rochereau.fr/blog/et-si-les-p%C3%A8res-%C3%A9taient-les-grands-oubli%C3%A9s-du-deuil-p%C3%A9rinatal.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+    <url>
+    <loc>https://www.nadine-rochereau.fr/blog/on-ne-%C2%AB-r%C3%A9pare-%C2%BB-pas-un-parent-endeuill%C3%A9-on-l%E2%80%99accompagne.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url> 
+  <url>
     <loc>https://nadine-rochereau.fr/mentions-legales.html</loc>
-    <lastmod>2025-12-17</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>

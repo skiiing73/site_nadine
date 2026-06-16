@@ -193,7 +193,7 @@ function buildArticlePage(data, htmlContent, slug) {
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2024 Les Couleurs de la Vie - Nadine Rochereau.</p>
+      <p>&copy; 2026 Les Couleurs de la Vie - Nadine Rochereau.</p>
     </div>
   </footer>
 
