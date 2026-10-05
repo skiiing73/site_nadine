@@ -28,13 +28,13 @@ Et certains soirs, j’ai même envisagé d’aller élever des lamas dans le La
 
 Mais derrière mes insomnies, il y avait une vraie question.
 
-Je savais une chose avec certitude : je voulais accompagner autour du deuil.
+Je savais une chose avec certitude : **je voulais accompagner autour du deuil.**
 
 Ça, ça n’avait pas changé.
 
-Mais alors… comment ? Et surtout, pourquoi ?
+Mais alors… **comment ? Et surtout, pourquoi ?**
 
-Je pensais avoir trouvé mon sujet
+**Je pensais avoir trouvé mon sujet**
 
 Pendant un temps, mon projet professionnel était très clairement tourné vers le deuil périnatal.
 
@@ -50,11 +50,11 @@ Pas forcément très bruyante.
 
 Mais suffisamment présente pour m’empêcher de dormir.
 
-Qu’est-ce que j’ai réellement envie d’accompagner ?
+**Qu’est-ce que j’ai réellement envie d’accompagner ?**
 
 Et puis j’ai compris que je cherchais peut-être la réponse au mauvais endroit. 
 
-Ce que mon propre deuil m’avait appris
+**Ce que mon propre deuil m’avait appris**
 
 Lorsque j’ai perdu ma fille aînée à la naissance, j’ai évidemment connu la douleur incommensurable du deuil.
 
@@ -74,7 +74,7 @@ Mon entreprise m’a alors proposé un coaching qui a changé mon regard sur les
 
 Et avec le recul, je crois que c’est là que se trouvait quelque chose d’essentiel.
 
- À l’époque, je ne me demandais pas tout cela.
+ **À l’époque, je ne me demandais pas tout cela**.
 
 Je ne me disais pas : *« Est-ce que j’ai le droit d’avoir des projets ? Est-ce que j’ai le droit de profiter de la vie ? »*
 
@@ -92,7 +92,7 @@ Une bonne épouse.
 
 Mais pour moi, c’était différent.
 
-Le fait d’avoir perdu ma fille avait comme créé une limite : je pouvais continuer à vivre, mais je n’avais plus vraiment le droit de vivre pour moi.
+**Le fait d’avoir perdu ma fille avait comme créé une limite :** je pouvais continuer à vivre, **mais je n’avais plus vraiment le droit de vivre pour moi.**
 
 Et surtout, je n’avais pas conscience que cette idée était là.
 
@@ -114,7 +114,7 @@ Pas dans le fait d'oublier.
 
 Pas dans le fait de « tourner la page ».
 
-Mais dans cette possibilité, parfois difficile à imaginer, de retrouver une place dans sa propre vie sans renier celle ou celui qui n’est plus là.
+Mais dans cette possibilité, parfois difficile à imaginer, **de retrouver une place dans sa propre vie sans renier celle ou celui qui n’est plus là.**
 
 Et si c’était finalement cela que j’avais envie d’accompagner ?
 
@@ -122,7 +122,7 @@ C’est là que mon projet a commencé à bouger.
 
 Je ne voulais pas seulement accompagner un type de deuil.
 
-Je voulais accompagner ce moment où, après un deuil qui a profondément bouleversé une vie, on cherche comment vivre dans cette nouvelle réalité.
+Je voulais accompagner **ce moment où, après un deuil qui a profondément bouleversé une vie, on cherche comment vivre dans cette nouvelle réalité.**
 
 Un deuil peut être périnatal.
 
@@ -134,7 +134,7 @@ Chaque perte a sa propre histoire.
 
 Mais parfois, quelque chose se ressemble :
 
-La vie a changé, et on ne sait plus très bien comment y prendre sa place.
+**La vie a changé, et on ne sait plus très bien comment prendre sa place**.
 
 Et c’est là que j’ai compris que je voulais élargir mon accompagnement.
 
@@ -150,11 +150,11 @@ Il m’a appris.
 
 Il a contribué à faire de moi la femme et la professionnelle que je suis aujourd’hui.
 
-Je ne change donc pas d’histoire.
+**Je ne change donc pas d’histoire.**
 
 J’élargis simplement le chemin.
 
-Aujourd’hui,j’ai envie d’accompagner les femmes dont la vie a été profondément marquée par un deuil et qui, parfois longtemps après, ne savent plus très bien qui elles sont ni comment avancer.
+**Aujourd’hui, j’ai envie d’accompagner les femmes dont la vie a été profondément marquée par un deuil et qui, parfois longtemps après, ne savent plus très bien qui elles sont ni comment avancer.**
 
 Celles qui ont peut-être appris à tenir.
 
@@ -164,9 +164,9 @@ Celles qui ont peut-être appris à tenir.
 
 Mais qui sentent qu’une question commence à émerger :
 
-«Et moi, dans tout ça ? »
+**«Et moi, dans tout ça ? »**
 
-Je ne crois pas vraiment à « l’après-deuil »
+**Je ne crois pas vraiment à « l’après-deuil »**
 
 D’ailleurs, je ne suis pas certaine que « l’après-deuil » existe vraiment.
 
@@ -190,7 +190,7 @@ De la légèreté.
 
 De l’amour.
 
- On peut même avoir envie de remettre une robe qui tourne, de danser sans raison,de partir quelque part juste parce que ça nous fait envie, de rire avec les copines jusqu’à en avoir mal au ventre, de faire un projet complètement improbable…
+**On peut même avoir envie de remettre une robe qui tourne, de danser sans raison,de partir quelque part juste parce que ça nous fait envie, de rire avec les copines jusqu’à en avoir mal au ventre, de faire un projet complètement improbable…**
 
 Bref,de remettre de la vie dans la vie.
 
@@ -210,9 +210,9 @@ Elle n’existe plus.
 
 Il ne s’agit pas non plus de tourner la page et de tout oublier.
 
-Il s’agit de trouver, petit à petit, comment vivre avec ce qui a changé, avec ce qui reste, et avec tout ce qui reste encore à créer.
+Il s’agit de trouver, petit à petit, **comment vivre avec ce qui a changé, avec ce qui reste, et avec tout ce qui reste encore à créer.**
 
- Alors,finalement, est-ce que j’ai vraiment foiré ?
+ **Alors,finalement, est-ce que j’ai vraiment foiré ?**
 
 Peut-être que oui… ou peut-être que non.
 
@@ -248,7 +248,7 @@ Pas pour effacer.
 
 Pas pour trahir.
 
-Mais pour retrouver sa propre façon de vivre avec l’absence.
+Mais pour **retrouver sa propre façon de vivre avec l’absence.**
 
 Parce que oui…
 
