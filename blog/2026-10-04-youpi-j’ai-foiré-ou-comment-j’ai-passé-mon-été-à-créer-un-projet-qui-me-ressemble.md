@@ -1,6 +1,5 @@
 ---
-title: Youpi, j’ai foiré !  Ou comment j’ai passé mon été à créer un projet qui
-  me ressemble
+title: "Youpi, j’ai foiré !  "
 date: 2026-10-05
 cover_image: /img/blog/3.-image-youpi-j-ai-foiré.png
 excerpt: "Dans cet article, Nadine Rochereau nous raconte les réflexions et les
@@ -13,7 +12,9 @@ excerpt: "Dans cet article, Nadine Rochereau nous raconte les réflexions et les
   à vivre."
 published: true
 ---
- Il y en a qui ont passé leur été au bord de la piscine.
+**Ou comment j’ai passé mon été à créer un projet qui me ressemble**
+
+Il y en a qui ont passé leur été au bord de la piscine.
 
 Moi,j’ai passé une bonne partie du mien à me tourner et me retourner dans mon lit.
 
@@ -165,8 +166,6 @@ Mais qui sentent qu’une question commence à émerger :
 
 «Et moi, dans tout ça ? »
 
-
-
 Je ne crois pas vraiment à « l’après-deuil »
 
 D’ailleurs, je ne suis pas certaine que « l’après-deuil » existe vraiment.
@@ -236,8 +235,6 @@ De recommencer.
 De découvrir que ce que l’on croyait être notre destination n’était qu’une étape.
 
 Alors les lamas attendront encore un peu, de toute façon leur laine me gratte.
-
- 
 
 Aujourd’hui,je sais mieux ce que je veux faire.
 
