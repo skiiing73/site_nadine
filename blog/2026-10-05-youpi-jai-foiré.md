@@ -98,7 +98,7 @@ Et surtout, je n’avais pas conscience que cette idée était là.
 
 Je trouvais cela normal.
 
-Comme si reprendre pleinement goût à la vie, avoir des projets, rire, profiter…revenait quelque part à avancer sans elle.
+Comme si, reprendre pleinement goût à la vie, avoir des projets, rire, profiter…revenait quelque part à avancer sans elle.
 
 Et avancer sans elle, c’était comme l’oublier.
 
@@ -190,9 +190,9 @@ De la légèreté.
 
 De l’amour.
 
-**On peut même avoir envie de remettre une robe qui tourne, de danser sans raison,de partir quelque part juste parce que ça nous fait envie, de rire avec les copines jusqu’à en avoir mal au ventre, de faire un projet complètement improbable…**
+**On peut même avoir envie de remettre une robe qui tourne, de danser sans raison, de partir quelque part juste parce que ça nous fait envie, de rire avec les copines jusqu’à en avoir mal au ventre, de faire un projet complètement improbable…**
 
-Bref,de remettre de la vie dans la vie.
+Bref, de remettre de la vie dans la vie.
 
 Et pourquoi pas quelques paillettes.
 
