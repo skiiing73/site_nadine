@@ -16,7 +16,7 @@ published: true
 
 Il y en a qui ont passé leur été au bord de la piscine.
 
-Moi,j’ai passé une bonne partie du mien à me tourner et me retourner dans mon lit.
+Moi, j’ai passé une bonne partie du mien à me tourner et me retourner dans mon lit.
 
 À réfléchir.
 
@@ -70,7 +70,7 @@ Je savais assez bien ce que je ne voulais plus être.
 
 Mais savoir qui je voulais être, était beaucoup plus compliqué.
 
-Mon entreprise m’a alors proposé un coaching qui a changé mon regard sur les chose set m’a permis, petit à petit, de réinvestir ma vie.
+Mon entreprise m’a alors proposé un coaching qui a changé mon regard sur les choses et m’a permis, petit à petit, de réinvestir ma vie.
 
 Et avec le recul, je crois que c’est là que se trouvait quelque chose d’essentiel.
 
