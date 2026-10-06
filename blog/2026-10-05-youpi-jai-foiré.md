@@ -236,7 +236,7 @@ De découvrir que ce que l’on croyait être notre destination n’était qu’
 
 Alors les lamas attendront encore un peu, de toute façon leur laine me gratte.
 
-Aujourd’hui,je sais mieux ce que je veux faire.
+Aujourd’hui, je sais mieux ce que je veux faire.
 
 **Accompagner les femmes dont la vie a été profondément marquée par un deuil, pour les aider à se retrouver et à réinvestir pleinement leur vie.**
 
