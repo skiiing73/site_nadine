@@ -98,7 +98,7 @@ Et surtout, je n’avais pas conscience que cette idée était là.
 
 Je trouvais cela normal.
 
- Comme si reprendre pleinement goût à la vie, avoir des projets, rire, profiter…revenait quelque part à avancer sans elle.
+Comme si reprendre pleinement goût à la vie, avoir des projets, rire, profiter…revenait quelque part à avancer sans elle.
 
 Et avancer sans elle, c’était comme l’oublier.
 
