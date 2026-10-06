@@ -212,7 +212,7 @@ Il ne s’agit pas non plus de tourner la page et de tout oublier.
 
 Il s’agit de trouver, petit à petit, **comment vivre avec ce qui a changé, avec ce qui reste, et avec tout ce qui reste encore à créer.**
 
- **Alors,finalement, est-ce que j’ai vraiment foiré ?**
+ **Alors, finalement, est-ce que j’ai vraiment foiré ?**
 
 Peut-être que oui… ou peut-être que non.
 
